@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 727610459}
   - component: {fileID: 727610458}
   m_Layer: 5
-  m_Name: Character
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 1355361310}
   - component: {fileID: 1355361309}
   m_Layer: 5
-  m_Name: Keyboard
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

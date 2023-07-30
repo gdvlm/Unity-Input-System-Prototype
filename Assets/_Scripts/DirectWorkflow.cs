@@ -8,6 +8,7 @@ public class DirectWorkflow : MonoBehaviour
     [SerializeField, Range(0, 10)] private float moveSpeed = 5;
 
     private Rigidbody2D _rigidbody2D;
+    private Vector3 _movement;
 
     private void Awake()
     {
@@ -26,10 +27,17 @@ public class DirectWorkflow : MonoBehaviour
         HandleMovement(keyboard);
     }
 
+    private void FixedUpdate()
+    {
+        if (_movement != Vector3.zero)
+        {
+            _rigidbody2D.MovePosition(transform.position + _movement);
+        }
+    }
+
     private void HandleMovement(Keyboard keyboard)
     {
-        Vector3 movement = GetDirection(keyboard);
-        _rigidbody2D.MovePosition(transform.position + movement);
+        _movement = GetDirection(keyboard);
     }
 
     private Vector3 GetDirection(Keyboard keyboard)

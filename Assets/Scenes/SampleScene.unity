@@ -686,6 +686,7 @@ GameObject:
   - component: {fileID: 1355361305}
   - component: {fileID: 1355361304}
   - component: {fileID: 1355361306}
+  - component: {fileID: 1355361307}
   m_Layer: 5
   m_Name: Keyboard
   m_TagString: Untagged
@@ -755,11 +756,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355361302}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 938bc323269bbfb4e8338c7ab6041bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
   moveAction:
     m_Name: Move
     m_Type: 0
@@ -809,3 +811,17 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     m_Flags: 0
+--- !u!114 &1355361307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355361302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808a5ec7b6fac3141b022e0e77a04acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  actions: {fileID: -944628639613478452, guid: 355e2b3aad429b54a9b360e0fe018356, type: 3}

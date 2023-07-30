@@ -22,7 +22,7 @@ public class ActionsAssetWorkflow : MonoBehaviour
         _movement = _moveAction.ReadValue<Vector2>();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         _rigidbody2D.MovePosition(transform.position + (_movement * moveSpeed));
     }

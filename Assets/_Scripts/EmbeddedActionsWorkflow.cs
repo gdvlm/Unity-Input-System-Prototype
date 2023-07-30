@@ -20,7 +20,7 @@ public class EmbeddedActionsWorkflow : MonoBehaviour
         _movement = moveAction.ReadValue<Vector2>();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         _rigidbody2D.MovePosition(transform.position + (_movement * moveSpeed));
     }

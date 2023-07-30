@@ -20,7 +20,7 @@ public class ActionsAssetWorkflowWithWrapper : MonoBehaviour
         _movement = _inputActions.gameplay.movement.ReadValue<Vector2>();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         _rigidbody2D.MovePosition(transform.position + (_movement * moveSpeed));
     }

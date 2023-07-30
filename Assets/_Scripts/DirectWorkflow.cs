@@ -27,7 +27,7 @@ public class DirectWorkflow : MonoBehaviour
         HandleMovement(keyboard);
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         if (_movement != Vector3.zero)
         {
